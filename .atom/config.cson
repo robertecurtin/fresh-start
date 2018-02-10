@@ -1,0 +1,30 @@
+"*":
+  "atom-beautify":
+    executables:
+      autopep8:
+        path: "/home/robert/.local/lib/python2.7/site-packages/autopep8.py"
+    general:
+      _analyticsUserId: "8b7a0957-879d-4d94-825e-9e8ad9ff3499"
+    lua: {}
+  "atom-format-lua":
+    lua51: "/home/robert/.lenv/lua/5.1.5/bin/lua"
+  "bracket-matcher":
+    autocompleteBrackets: false
+  core:
+    disabledPackages: [
+      "language-lisp"
+    ]
+    telemetryConsent: "limited"
+  editor:
+    fontFamily: "Inconsolata"
+    fontSize: 23
+    lineHeight: 1.1
+    showIndentGuide: true
+    showInvisibles: true
+    tabType: "soft"
+  "exception-reporting":
+    userId: "f2a2792c-bb2f-4234-9dba-a43bbd0860c3"
+  "linter-ui-default":
+    showPanel: true
+  welcome:
+    showOnStartup: false

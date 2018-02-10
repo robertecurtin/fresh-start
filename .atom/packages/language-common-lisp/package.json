@@ -1,0 +1,58 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/tmp/d-1171022-22691-gs9nrx.j6c938r529/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/tmp/d-1171022-22691-gs9nrx.j6c938r529/package.tgz",
+        "spec": "/tmp/d-1171022-22691-gs9nrx.j6c938r529/package.tgz",
+        "type": "local"
+      },
+      "/tmp/apm-install-dir-1171022-22691-huisq0.dlw7ajdcxr"
+    ]
+  ],
+  "_from": "../d-1171022-22691-gs9nrx.j6c938r529/package.tgz",
+  "_id": "language-common-lisp@0.9.5",
+  "_inCache": true,
+  "_location": "/language-common-lisp",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/tmp/d-1171022-22691-gs9nrx.j6c938r529/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/tmp/d-1171022-22691-gs9nrx.j6c938r529/package.tgz",
+    "spec": "/tmp/d-1171022-22691-gs9nrx.j6c938r529/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-1171022-22691-gs9nrx.j6c938r529/package.tgz",
+  "_shasum": "1b94aca027acd23d3be27a62003f24af394aa12f",
+  "_shrinkwrap": null,
+  "_spec": "/tmp/d-1171022-22691-gs9nrx.j6c938r529/package.tgz",
+  "_where": "/tmp/apm-install-dir-1171022-22691-huisq0.dlw7ajdcxr",
+  "bugs": {
+    "url": "https://github.com/serialhex/language-common-lisp/issues"
+  },
+  "dependencies": {},
+  "description": "Common Lisp Highlighting & Support in Atom",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">0.5.0"
+  },
+  "homepage": "https://github.com/serialhex/language-common-lisp#readme",
+  "license": "MIT",
+  "name": "language-common-lisp",
+  "optionalDependencies": {},
+  "readme": "# Common Lisp Highlighting & Support in Atom\n\nAn awesome package lovingly created to support proper syntax highlighting of\nCommon Lisp files.\n\n(If you want Emacs Lisp highlighting use Alhadis' [Emacs Highlighting](https://github.com/Alhadis/language-emacs-lisp) package)\n\nThis is *not* converted from the Textmate Bundle, and therefore does not have\nthe shortcomings of said bundle!\n\n## Warning:\nThere are some flaws in parsing lambda-lists, especially ones with `&optional (foo \"bar\")`\ntype things in it.  Since parsing that is *not* regular (I don't think) I am probably\ngoing to have to re-write it in an *actual* language.  So just be careful and let\nme know if you know how to fix it! Thanks! :-D\n\n## TODO:\n* Get Complex numbers `#c(5.0 3/2)` working properly.\n* Remove a lot of the scheme/Racket-isms that are in the code, as I have use a *LOT*\n  of their regexes to jump-start this work.\n* Get `loop` and all of it's keywords working just fine.\n* Set the read-macro regex, especially for pathnames\n* Fix typing the single quote character `'` so it doesn't auto-fill a second one\n* Other stuff I haven't thought of yet...\n\n\n![Lisp](https://cdn.rawgit.com/serialhex/language-common-lisp/eaae981b68cff11951f296174f1248f03c7e1083/lisplogo_alien.svg)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serialhex/language-common-lisp.git"
+  },
+  "version": "0.9.5"
+}

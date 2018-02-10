@@ -1,0 +1,5 @@
+.DS_Store
+.busted
+/node_modules
+/spec
+npm-debug.log
