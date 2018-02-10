@@ -8,3 +8,4 @@ fi
 ./install_vim.sh
 ./install_atom.sh
 ./install_lua.sh
+./configure_git.sh
