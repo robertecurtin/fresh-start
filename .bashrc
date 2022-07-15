@@ -1,22 +1,10 @@
 This is an excerpt:
 
-# Colors
-# Reset
-#COLOR_OFF='\e[0m'       # Text Reset
+source ~/.colors.sh
 
-# https://misc.flogisoft.com/bash/tip_colors_and_formatting
+if [ "$color_prompt" = yes ]; then
+    PS1="\[$TIME_COLOR\]\t\[$DASH_COLOR\]-\[$USERNAME_COLOR\]\u\[$PATH_COLOR\]\[$PATH_COLOR\]\w\[\033[m\]\[$GIT_COLOR\]\$(__git_ps1)\[$INPUT_COLOR\]\$ "
 
-# Regular Colors
-
-BLUE='\e[38;5;50m'
-GREEN='\e[38;5;49m'
-GRAY='\e[38;5;246m'
-CYAN='\e[0;36m'   
-PURPLE='\e[38;5;176m'
-
-TIME_COLOR=$GREEN
-DASH_COLOR=$GRAY
-USERNAME_COLOR=$GREEN
-PATH_COLOR=$PURPLE
-GIT_COLOR=$BLUE      
-INPUT_COLOR=$PURPLE
+else
+    PS1="\t-\u\w\$(__git_ps1)\$ "
+fi
