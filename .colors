@@ -6,11 +6,17 @@
 
 # Regular Colors
 
-BLUE='\e[38;5;50m'
-GREEN='\e[38;5;49m'
-GRAY='\e[38;5;246m'
-CYAN='\e[0;36m'   
-PURPLE='\e[38;5;176m'
+color ()
+{
+  echo -e "\e[38;5;$1"'m'
+}
+
+BLUE=$(color 50)
+GREEN=$(color 49)
+GRAY=$(color 246)
+CYAN=$(color 6)
+PURPLE=$(color 176)
+RED=$(color 88)
 
 TIME_COLOR=$GREEN
 DASH_COLOR=$GRAY
@@ -18,3 +24,4 @@ USERNAME_COLOR=$GREEN
 PATH_COLOR=$PURPLE
 GIT_COLOR=$BLUE      
 INPUT_COLOR=$PURPLE
+FAIL_COLOR=$RED
