@@ -1,10 +1,6 @@
 # Colors
-# Reset
-#COLOR_OFF='\e[0m'       # Text Reset
 
 # https://misc.flogisoft.com/bash/tip_colors_and_formatting
-
-# Regular Colors
 
 color ()
 {
