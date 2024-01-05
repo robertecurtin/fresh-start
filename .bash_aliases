@@ -21,6 +21,7 @@ alias prune="git remote prune origin |  grep -o -E 'origin/[^ ]+' | sed 's/origi
 # Git nonsense
 alias fs="git status --porcelain"
 alias fdr="git reset --hard && git clean -fd"
+alias fddr="git reset --hard && git clean -xfdf"
 alias fdb="git branch -D"
 alias fa="git add"
 alias fz="git push"
@@ -29,3 +30,10 @@ alias fc="git commit -m"
 alias fb="git checkout"
 alias fbb="git checkout -b"
 alias ff="git diff"
+
+alias subup-force="git submodule update --init --recursive --force && git submodule foreach --recursive git clean -ffd"
+
+merge-when-github-is-happy() {
+  gh pr checks $1 --watch && notify-send "Ready to merge " $1 && gh pr merge -d $1
+}
+
