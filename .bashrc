@@ -1,6 +1,7 @@
 # Pretty colors!
 
 source ~/.colors
+source /etc/bash_completion.d/git-prompt
 
 color_failure()
 {
