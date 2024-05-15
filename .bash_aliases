@@ -19,7 +19,7 @@ alias l='ls -CF'
 alias prune="git remote prune origin |  grep -o -E 'origin/[^ ]+' | sed 's/origin\///' | xargs git branch -d"
 
 # Git nonsense
-alias fs="git status --porcelain"
+alias fs="git status"
 alias fdr="git reset --hard && git clean -fd"
 alias fddr="git reset --hard && git clean -xfdf"
 alias fdb="git branch -D"
